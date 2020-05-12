@@ -1,0 +1,10 @@
+<h1>Recipes</h2>
+<%i = 1%>
+<% @recipes.each do |recipe| %>
+<h2><%= i %><h2>
+<h3>Name: <%= recipe.name %></h3>
+<h3>Ingredients: <%= recipe.ingredients %></h3>
+<h3>Cook Time: <%= recipe.cook_time %></h3>
+<a class="title" href="/recipes/<%=recipe.id%>">Link</a>
+<%i += 1%>
+<%end%>
