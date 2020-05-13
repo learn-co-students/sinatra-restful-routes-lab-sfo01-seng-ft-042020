@@ -1,0 +1,9 @@
+<h2>Recipe for <%=@recipe.name%></h2>
+
+<h3>Ingredients: <%=@recipe.ingredients%>
+<h4>Cooking Time: <%=@recipe.cook_time%>
+<br><br>
+<form method='post' action='/recipes/<%=@recipe.id%>'>
+<input type='hidden' id='hidden' name='_method' value='delete'>
+<input type='submit' id='delete' value="Please Don't Tell">
+</form>
